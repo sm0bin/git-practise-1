@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
     /* color: black; */
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -30,13 +30,15 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    margin: 0;
 }
 
 nav ul li {
     display: inline-block;
     margin-left: 20px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: larger;
+    margin: 0;
     transition: color 0.3s, transform 0.3s;
 
 }
@@ -50,15 +52,6 @@ nav ul li:hover {
     transform: translateY(-4px);
 }
 
-
-nav ul {
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0;
-}
-
 main {
 
     padding: 20px;
@@ -70,8 +63,9 @@ main {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     width: inherit;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .card {
@@ -80,8 +74,10 @@ main {
     text-align: justify;
     padding: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     background: white;
-    width: 33vw;
+    width: 30%;
+    /* height: auto; */
     /* box-shadow: 1px 1px 8px 1px black; */
 }
 
@@ -93,32 +89,44 @@ main {
 
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: large;
-    line-height: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    /* line-height: 1.5rem; */
+    font-weight: 400;
 }
 
 #hero-p {
     width: inherit;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.paragraph {
+    margin-top: 0;
+    /* margin-bottom: rem; */
 }
 
 ul {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
 }
 
 ul li {
-    margin-top: 10px;
-    margin-left: 40px;
+    /* margin-top: 10px; */
+    margin-left: 4rem;
 }
 
 .card-header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -146,6 +154,18 @@ button {
     border-radius: 6px;
     margin-bottom: 10px;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 0% 50%;
 
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+}
+
+footer p span {
+    font-weight: 600;
 }
